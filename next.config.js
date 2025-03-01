@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Enables static export
-  distDir: "out",   // Output directory
-  images: {
-    unoptimized: true, // GitHub Pages does not support Next.js image optimization
-  },
+  output: "export",
+  distDir: "out",
+  images: { unoptimized: true },
+  basePath: "/voltsoftware.xyz",
+  assetPrefix: "/voltsoftware.xyz/",
 };
 
 module.exports = nextConfig;
